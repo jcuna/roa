@@ -1,0 +1,50 @@
+/*
+* Main Style file
+*
+*/
+
+a.logo img {
+    height: 45px;
+}
+
+.navbar-inverse {
+    /* IE10+ */
+    background-image: -ms-linear-gradient(left, #87CEC4 10%, #ccc 90%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #87CEC4 10%, #ccc 90%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #87CEC4 10%, #ccc 90%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(10, #87CEC4), color-stop(90, #ccc));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #87CEC4 10%, #ccc 90%);
+
+    /* W3C Markup */
+    background-image: linear-gradient(to right, #87CEC4 10%, #ccc 90%);
+}
+
+.play-button {
+    height: 120px;
+    width: 120px;
+    background-image: url(/sites/default/files/default_images/playbutton.png);
+    display: inline;
+    float: left;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    text-indent: -9999px;
+    margin-top: -40%;
+    margin-left: 40%;
+}
+
+.play-button:hover {
+    opacity: 0.8;
+}
+
+.page-title {
+    margin-left: 15px;
+}

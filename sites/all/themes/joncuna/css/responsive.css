@@ -1,0 +1,8 @@
+@media screen and (max-width: 480px) {
+    .play-button {
+        height: 80px;
+        width: 80px;
+        margin-top: -42%;
+        margin-left: 39%;
+    }
+}
