@@ -99,11 +99,20 @@
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
           <?php if (!empty($secondary_nav)): ?>
             <?php print render($secondary_nav); ?>
+          <?php endif; ?>
+            <ul class="navbar-nav secondary social-links">
+                <li class="leaf social-link"><a target="_blank" href="https://www.facebook.com/rise.of.art"><img src="<?= drupal_get_path('theme', 'joncuna') ?>/css/imgs/fb.png"></a> </li>
+                <li class="leaf social-link"><a target="_blank" href="#"><img src="<?= drupal_get_path('theme', 'joncuna') ?>/css/imgs/twit.png"></a> </li>
+                <li class="leaf social-link"><a target="_blank" href="http://instagram.com/rise_of_art"><img src="<?= drupal_get_path('theme', 'joncuna') ?>/css/imgs/inst.png"></a> </li>
+            </ul>
+        </nav>
+      </div>
+        <div class="navbar-collapse collapse primary-center">
+            <nav role="navigation">
+          <?php if (!empty($primary_nav)): ?>
+            <?php print render($primary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
@@ -123,7 +132,14 @@
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
+</div>
+    <?php if (!empty($page['slider'])): ?>
+        <div class="top-slider">
+            <?php print render($page['slider']); ?>
+        </div>
+    <?php endif; ?>
 
+<div class="main-container <?php print $container_class; ?>">
   <div class="row">
 
     <?php if (!empty($tabs)): ?>
@@ -144,7 +160,7 @@
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+<!--      --><?php //if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php print render($title_suffix); ?>
