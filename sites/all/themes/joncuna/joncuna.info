@@ -25,3 +25,5 @@ scripts[]   = js/style.js
 stylesheets[all][]   = css/style.css
 stylesheets[all][]   = css/responsive.css
 
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = layouts

@@ -1,0 +1,45 @@
+
+.four-column-stacked {
+/*  overflow: hidden;  */
+}
+
+.four-column-stacked .panel-col-top,
+.four-column-stacked .panel-col-bottom {
+  width: 100%; 
+  clear: both;
+}
+
+.four-column-stacked .panel-col-top .inside {
+  margin-bottom: 1em;
+}
+
+.four-column-stacked .panel-col-first {
+  float: left; 
+  width: 24%;
+}
+
+.four-column-stacked .panel-col-first .inside {
+  margin: 0 .5em 1em 0;
+}
+
+.four-column-stacked .panel-col {
+  float: left; 
+  width: 24%;
+}
+
+.four-column-stacked .panel-col .inside {
+  margin: 0 .5em 1em .5em;
+}
+
+.four-column-stacked .panel-col-last {
+  float: left; 
+  width: 24%;
+}
+
+.four-column-stacked .panel-col-last .inside {
+  margin: 0 0 1em .5em;
+}
+
+.four-column-stacked .panel-separator {
+  margin: 0 0 1em 0;
+}
