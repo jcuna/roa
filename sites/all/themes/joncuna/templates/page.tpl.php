@@ -182,6 +182,9 @@
 
   </div>
 </div>
+<div id="modal" class="modal fade">
+    <div class="modal-dialog" role="document"></div>
+</div>
 
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">

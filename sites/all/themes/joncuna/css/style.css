@@ -122,6 +122,8 @@ a.logo img {
 
 .page-title {
     margin-left: 15px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 /**
@@ -134,6 +136,10 @@ h1, h2, h3, h4, h5, h5 {
 
 h2, h3, h4 {
     padding: 5px 5px 15px;
+}
+
+.panel-display h2 {
+    margin-top: 0;
 }
 
 .hovered-line {
@@ -170,17 +176,92 @@ h2, h3, h4 {
 
 .group-team-profile img {
     border-radius: 50%;
+    width: 100px;
+    float: left;
+    margin-right: 20px;
 }
 
 .group-team-profile {
-    background: #fff;
-    border: 1px solid #eeeeee;
-    border-radius: 4px;
-    padding: 4px;
-    height: 470px;
-    overflow: scroll;
+    margin: 0 0 58px;
+}
+
+.modal-header h4.modal-title,
+.group-team-profile h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0 0;
+}
+.modal-header h4.modal-title {
+    padding: 0;
+}
+.profile-image-popup img {
+    margin: 5px auto 25px;
+}
+.profile-modal .text {
+    padding: 0 20px 20px;
+}
+.pop-profile {
+    cursor: pointer;
+}
+
+.show-on-pop {
+    display: none;
 }
 
 .group-team-profile .field-name-field-role-description {
     padding: 5px;
+}
+
+/** Zoom on hover **/
+
+.group-zoom-on-hover {
+    padding: 10px;
+    position: relative;
+    margin: 20px 0 30px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.group-zoom-on-hover .field-name-field-zooming-image {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+}
+.group-zoom-on-hover .field-name-field-zooming-image img {
+    height: 250px;
+}
+.group-zoom-on-hover .field-name-field-link {
+    position: relative;
+    text-align: center;
+    display: inline;
+}
+
+.group-zoom-on-hover .field-name-field-link a {
+    font-family: "Poiret One", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+}
+
+.group-zoom-on-hover .field-name-field-link a:hover {
+    text-decoration: none;
+    background-color: #CCC;
+    color: #000;
+    opacity: 0.8;
+}
+
+.group-zoom-on-hover .field-name-field-link .field-items {
+    top: 50%;
+    transform: translateY(180%);
+}
+
+.enlarge-transition {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
