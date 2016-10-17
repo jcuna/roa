@@ -176,13 +176,13 @@ h2, h3, h4 {
 
 .group-team-profile img {
     border-radius: 50%;
-    width: 100px;
+    width: 140px;
     float: left;
     margin-right: 20px;
 }
 
 .group-team-profile {
-    margin: 0 0 58px;
+    margin: 0 0 95px;
 }
 
 .modal-header h4.modal-title,
